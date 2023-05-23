@@ -1,0 +1,449 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8"  />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Home</title>
+   <style>
+	
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,400&display=swap');
+
+:root{
+    --themeRed: #e43a47;
+    --gray: #efefef;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+button,
+body{
+	font-family: 'Roboto', sans-serif;
+}
+ *{
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+ }
+
+ p{
+     font-size:14px;
+     line-height:26px;
+ }
+
+ .fullcontainer{
+ 	width: 100%;
+ }
+
+ .container {
+ 	width: 1150px;
+ 	margin:auto;
+ }
+ .container p{
+     font-size: 20px;
+ }
+
+ .sectionTitle{
+     width: 300px;
+     border-bottom: 3px solid var(--themeRed);
+     text-align: center;
+     font-size: 2rem;
+     font-weight:200;
+     margin:0 auto 50px;
+     position: relative;
+     padding: 10px 0;
+     text-transform: uppercase;
+ }
+
+ header{
+ 	width:100%;
+ 	background-color: rgba(0,0,0,0.6);
+ 	position: fixed;
+ 	z-index: 2;
+ }
+ header .container {
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+
+ header .container .logo {
+ 	  padding: 15px 0;
+ 	  height: 75px;
+ }
+
+ header .container .logo nav ul li img{
+ 	height: 100%;
+ }
+ header .container .logo nav ul{
+    list-style-type: none;
+}
+ header .container .logo nav ul li{
+     display: inline-block;
+     height: 51px;
+ 	  line-height: 0px;
+ 	  padding: 0 1px;
+ 	  text-decoration:none;
+ 	  text-transform: capitalize;
+ 	  font-size: 30px;
+ 	  color: #fff;
+ }
+
+ header nav ul{
+ 	list-style-type: none;
+ }
+ header nav ul li {
+    display: inline-block;
+ }
+
+ header nav ul li a{
+ 	  display: inline-block;
+ 	  height: 75px;
+ 	  line-height: 75px;
+ 	  padding: 0 15px;
+ 	  text-decoration:none;
+ 	  text-transform: capitalize;
+ 	  font-size: 16px;
+ 	  color: #fff;
+       transition: 0.3s;
+ }
+   header nav ul li a:hover{
+       background-color: var(--themeRed);
+   }
+
+.banner{
+    width: 100%;
+    background-image: url("../images/banner9.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+.banner h1{
+    margin-top:230px;
+    display:inline-block;
+    font-size: 3.5rem;
+    color: rgb(19, 16, 16);
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height:4.2rem;
+    font-weight: 100;
+}
+.banner h1 span{
+    background-color: var(--themeRed);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.banner h3{
+      color: rgb(247, 241, 241);
+      width: 50%;
+      text-shadow: 0 0 2px #000;
+}
+
+.join{
+    background-image: url("../images/pattern.jpg");
+    color: #fff;
+}
+.join .joinTitle{
+             font-size: 40px;
+             font-weight: 100;
+}
+.join .joinTitle span{
+    font-weight: 800;
+}
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.join button.joinNow{
+    margin-right: 10px;
+    background-color: #424242;
+    color: #fff;
+}
+.join button.adoption{
+    background-color: var(--gray);
+}
+footer{
+    background-color: #181818;
+    color: #7f7f7f;
+    padding: 50px;
+    font-size: 14px;
+}
+footer .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 50px;
+}
+footer .title{
+     font-size: 20px;
+     font-weight: 600;
+     text-transform: uppercase;
+     border-bottom: 2px solid;
+     margin-bottom: 30px;
+     padding: 0 0 5px 0;
+}
+footer p{
+    margin-bottom: 10px;
+}
+footer .linksContainer ul{
+    list-style-type: none;
+}
+footer .linksContainer a:hover{
+    background-color: var(--themeRed);
+}
+
+footer .linksContainer ul li a{
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .newsLetterContainer img{
+    height: 60px;
+    margin-bottom: 11px;
+}
+footer .newsLetterContainer li{
+    list-style-type: none;
+      font-size: 30px;
+      color: #fff;
+}
+footer .newsLetterContainer input{
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+
+
+.call{
+    padding-top: 100px;
+    padding-left: 220px;
+    padding-right: 200px;
+}
+.callus a {
+    color: #d5bc92;
+    text-decoration: none;
+}
+.callus {
+    padding-top: 200px;
+    margin: 0;
+    padding: 5px;
+    padding-left: 220px;
+    padding-right: 180px;
+    text-align: center;
+    background: #5c4528;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 3px;
+}
+.filters{
+    padding-left: 220px;
+    padding-right: 200px;
+}
+.filters p {
+    text-align: left;
+    color: rgb(209, 46, 46);
+    width: 49%;
+    display: inline-block;
+    margin: 0px;
+}
+.filters p select {
+    font-size: 18px;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    color: #248f2d;
+    padding: 12px 20px;
+}
+.image {
+    column-count: 3;
+    column-gap: 10px;
+    margin-bottom: 30px;
+}
+.image a{
+    margin-top: 30px;
+}
+.image  img{
+    margin-top: 30px;
+    width: 350px;
+    height:300px;
+}
+.image .title{
+    margin-top: 10px;
+        color: #248f2d;
+        font-size: 30px;
+        padding-left: 130px;
+}
+.image .specs{
+    margin-top: 10px;
+    color: #248f2d;
+}
+.image .row p {
+    font-size: 16px;
+    text-align: center;
+}
+.image .specs .gender,
+.image .specs .ageGroup{
+    padding: 5px;
+}
+.image .specs i{
+    font-size: 10px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-circle:before {
+    content: "\f111";
+}
+
+
+   </style>
+ </head>
+ <body>
+      <div class="fullcontainer banner" id="homesection" style="height:100vh">
+	  <header>
+         <div class="container">
+            <div class="logo">
+				<nav>
+					<ul>
+						<a href="index.php"><li> <img src="images/logo.png" alt="NGO logo"/>  HELPING HANDS</li></a>
+					</ul>
+				</nav>
+			</div>
+
+             <nav>
+                  <ul>
+                  	   <li>
+                  	  	<a href="index.php">HOME</a>
+                  	   </li>
+                  	  <li>
+                  	  	<a href="project.php">PROJECTS</a>
+                  	   </li>
+                  	   <li>
+                  	  	<a href="join.php">JOIN</a>
+                  	   </li>
+                  	   <li>
+                  	  	<a href="visit.php">VISIT</a>
+                  	   </li>
+                  	   <li>
+                  	  	<a href="adopt.php">ADOPT</a>
+                  	   </li>
+                  	   <li>
+                  	  	<a href="donate.php">DONATE</a>
+                  	   </li>
+                  	   <li>
+                  	  	<a href="gallery.php">GALLERY</a>
+                  	   </li>
+                  	   <li>
+                  	  	<a href="contact.php">CONTACT</a>
+                  	   </li>
+                        <li>
+                        <a href="login.php">Login</a>
+                        </li>
+                  </ul>
+             </nav> 
+         </div>
+      </header>
+	       <div class="container">
+	        <h1>Together we can <span>save lives</span></h1>
+			<p>
+				Animals should be only shot with cameras, not guns.
+			</p>	
+		</div>
+      </div>
+	    <section class="fullcontainer" id="aboutsection">
+          <div class="container">
+			  <h2 class="sectionTitle">ABOUT US</h2>
+			  <p>
+				We are a group of people with a common goal; to live in a way that we cause minimum harm, and live to do maximum good work. It's our understanding that physical pain is objectively bad. So for us, reducing pain, and nurturing changes that reduce pain is an objective good.
+			  </p>
+			  <p><br>
+				Our NGO is a stray animal rescue, an awareness organization, and a women-powered small scale social enterprise. It started out as a home that we built with space for injured stray animals to heal & be heard, for people who wanted to help, and for us to be able to organically farm, while reducing our harm.
+			  </p>
+			  <p><br>
+				Instead of putting in a swimming pool, we built a cow shed. Instead of media room, we have a clinic. Instead of having master bedrooms, we made rooms for those who want to come here and experience a simple, sustainable and purposeful life.
+			  </p>
+			  <p><br>
+				We started constructing the place in a small colony near hasanpur chungi delhi road saharanpur,uttar pardesh.
+			  </p>			 
+		  </div>
+		  </section><br><br>
+		  <section class="join" id="joinSection">
+			  <div class="container">
+				  <div class="joinTitle">Adopt Animal & <span>SAVE LIVES</span>
+				</div><br>
+				<p>Most stray dogs are friendly, and will ignore people who ignore them. If one is walking past you non-aggressively (not barking or growling at you), don't react. Just keep walking! Don't stare at them, since many dogs find it threatening.</p>
+			    <br><a href="join.php"><button class="joinNow">JOIN US</button></a> 
+				<a href="adopt.php"><button class="adoption">ADOPT</button></a>
+			</div>
+		  </section>
+		  <footer>
+			  <div class="container">
+				<div class="newsLetterContainer">
+					  <li><img src="images/logo.png" alt=""><br>Helping Hands</li>
+					  <br><p>
+						The philosophy behind this was to reduce our suffering footprint (the suffering we cause in the course of living), and making our survival purposeful by doing good work.
+					  </p>
+					  <form method="POST" action="emailcustomer.php">
+					  <input type="text" name="email" id="email" placeholder="Enter your email id">
+					  <button type="submit" name="submit" value="Submit" style="width: 70px;background-color: white; border-radius: 15px;margin-left: 250px;margin-top: 5px;">SUBMIT</button>
+				      </form>
+				</div>
+				<div class="linksContainer">
+					  <div class="title">Usefull Links</div>
+					  <ul>
+						<li>
+						   <a href="index.php">HOME</a>
+						</li>
+					   <li>
+						   <a href="project.php">PROJECTS</a>
+						</li>
+						<li>
+						   <a href="join.php">JOIN</a>
+						</li>
+						<li>
+						   <a href="visit.php">VISIT</a>
+						</li>
+						<li>
+						   <a href="adopt.php">ADOPT</a>
+						</li>
+						<li>
+						   <a href="donate.php">DONATE</a>
+						</li>
+						<li>
+						   <a href="gallery.php">GALLERY</a>
+						</li>
+						<li>
+						   <a href="contact.php">CONTACT</a>
+						</li>
+				 </ul>
+				</div>
+				<div class="connectContainer">
+					 <div class="title">CONNECT WITH US</div>
+					 <p>
+						 Rajouri Garden,near hasanpur chungi, saharanpur<br>
+						 247001,Uttar pardesh.
+					 </p> 
+					 <p>
+						 info@HelpingHands.com
+					 </p>
+					 <p>(+91) 9759000083</p>
+				</div>
+			  </div>
+		  </footer>
+ </body>
+ </html>    
